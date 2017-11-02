@@ -16,24 +16,24 @@ public class EditText extends android.support.v7.widget.AppCompatEditText {
 
     public EditText(Context context) {
         super(context);
-        this.prefix = this.getText().toString().trim();
+        this.prefix = this.getText().toString();
         init();
     }
 
     public EditText(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.prefix = this.getText().toString().trim();
+        this.prefix = this.getText().toString();
         init();
     }
 
     public EditText(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        this.prefix = this.getText().toString().trim();
+        this.prefix = this.getText().toString();
         init();
     }
 
     public void setPrefix(String s) {
-        this.prefix = s.trim();
+        this.prefix = s;
         setText(s);
     }
 
